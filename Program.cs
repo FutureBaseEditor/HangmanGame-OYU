@@ -1,4 +1,6 @@
-﻿namespace HangmanGame_O_YU_
+﻿using System.Globalization;
+
+namespace HangmanGame_O_YU_
 {
     internal class Program
     {
@@ -11,7 +13,21 @@
             string[] yemekler = { "Makarna", "Kebap", "Pilav", "Pizza", "Köfte", "Tavuk", "Balık", "Mantı", "Börek", "Salata" };
             string[] sporlar = { "Futbol", "Basketbol", "Voleybol", "Tenis", "Yüzme", "Atletizm", "Boks", "Jimnastik", "Hentbol", "Ragbi" };
             string[] kategoriler = { "Hayvanlar", "Ülkeler", "Meslekler", "Yemekler", "Sporlar" };
+            ShowCategories(kategoriler);
             
+        }
+        static void ShowCategories(string[] categories)
+        {
+            for (int i = 0; i < 5; i++)
+            {
+                for (int j = 0; j < 2; j++)
+                {
+                    if (i == 4  && j == 1) break;
+                     Console.Write("{0}- {1}\t", i + j + 1, categories[i]);
+                }
+                Console.WriteLine();
+                i++;
+            }
         }
     }
 }
