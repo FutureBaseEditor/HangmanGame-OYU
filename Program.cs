@@ -6,7 +6,7 @@ namespace HangmanGame_O_YU_
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Adam Asmaca");
+            ShowGameName();
             string[] hayvanlar = { "Kedi", "Köpek", "At", "Tavşan", "Leylek", "Deve", "Yarasa", "Sincap", "Sinek", "Karınca" };
             string[] ulkeler = { "Türkiye", "İtalya", "Kanada", "Almanya", "Japonya", "İngiltere", "Rusya", "Fransa", "Meksika", "Brezilya" };
             string[] meslekler = { "Öğretmen", "Doktor", "Mühendis", "Hemşire", "Polis", "Avukat", "İnşaat işçisi", "Dişçi", "Gazeteci", "Bankacı" };
@@ -14,7 +14,7 @@ namespace HangmanGame_O_YU_
             string[] sporlar = { "Futbol", "Basketbol", "Voleybol", "Tenis", "Yüzme", "Atletizm", "Boks", "Jimnastik", "Hentbol", "Ragbi" };
             string[] kategoriler = { "Hayvanlar", "Ülkeler", "Meslekler", "Yemekler", "Sporlar" };
             ShowCategories(kategoriler);
-            
+            ShowGameName();
         }
         static void ShowCategories(string[] categories)
         {
@@ -28,6 +28,10 @@ namespace HangmanGame_O_YU_
                 Console.WriteLine();
                 i++;
             }
+        }
+        static void ShowGameName()
+        { 
+            Console.WriteLine("Adam Asmaca");
         }
     }
 }
