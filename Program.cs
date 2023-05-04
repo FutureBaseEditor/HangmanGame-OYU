@@ -1,6 +1,4 @@
-﻿using System.Globalization;
-
-namespace HangmanGame_O_YU_
+﻿namespace HangmanGame_O_YU_
 {
     internal class Program
     {
@@ -18,9 +16,10 @@ namespace HangmanGame_O_YU_
         }
         static void ShowCategories(string[] categories)
         {
-            for (int i = 0; i < 5; i++)
+            int columnCount = 2;
+            for (int i = 0; i < categories.Length; i++)
             {
-                for (int j = 0; j < 2; j++)
+                for (int j = 0; j < columnCount; j++)
                 {
                     if (i == 4  && j == 1) break;
                      Console.Write("{0}- {1}\t", i + j + 1, categories[i]);
