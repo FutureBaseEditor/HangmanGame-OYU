@@ -4,6 +4,7 @@
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Adam Asmaca");
             Alphabet();
         }
         static void Alphabet()
