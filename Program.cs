@@ -6,7 +6,7 @@
         {
             Console.WriteLine("Adam Asmaca");
             int score = 0;
-            Console.WriteLine("\"Puan: {0}\"",score);
+            Console.WriteLine("Puan: {0}",score);
         }
     }
 }
