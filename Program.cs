@@ -10,9 +10,12 @@
         static void Alphabet()
         {
             char[] harfler = { 'A', 'B', 'C', 'Ç', 'D', 'E', 'F', 'G', 'Ğ', 'H', 'I', 'İ', 'J', 'K', 'L', 'M', 'N', 'O', 'Ö', 'P', 'R', 'S', 'Ş', 'T', 'U', 'Ü', 'V', 'Y', 'Z' };
-            for (int harf = 0; harf < harfler.Length /2; harf++) Console.Write("{0} ", harfler[harf]);
-            Console.WriteLine();
-            for (int harf = harfler.Length / 2; harf < harfler.Length; harf++) Console.Write("{0} ", harfler[harf]);
+            for (int harf = 0; harf < harfler.Length ; harf++) 
+            {
+                if (harf == harfler.Length / 2) Console.WriteLine("{0} ", harfler[harf]);
+                else Console.Write("{0} ", harfler[harf]);
+            }
+            
         }
 
     }
