@@ -13,7 +13,7 @@
             string[] sporlar = { "Futbol", "Basketbol", "Voleybol", "Tenis", "Yüzme", "Atletizm", "Boks", "Jimnastik", "Hentbol", "Ragbi" };
             string[] kategoriler = { "Hayvanlar", "Ülkeler", "Meslekler", "Yemekler", "Sporlar" };
             
-            int wrongAnswer = 5;
+            int wrongAnswer = 0;
 
                  if (wrongAnswer == 1) Wrong1();
             else if (wrongAnswer == 2) Wrong2();
