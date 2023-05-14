@@ -4,9 +4,11 @@
     {
         static void Main(string[] args)
         {
+            
             Console.WriteLine("Adam Asmaca");
             int score = 0;
             Console.WriteLine("Puan: {0}",score);
+            
             string[] hayvanlar = { "Kedi", "Köpek", "At", "Tavşan", "Leylek", "Deve", "Yarasa", "Sincap", "Sinek", "Karınca" };
             string[] ulkeler = { "Türkiye", "İtalya", "Kanada", "Almanya", "Japonya", "İngiltere", "Rusya", "Fransa", "Meksika", "Brezilya" };
             string[] meslekler = { "Öğretmen", "Doktor", "Mühendis", "Hemşire", "Polis", "Avukat", "İnşaat işçisi", "Dişçi", "Gazeteci", "Bankacı" };
@@ -15,6 +17,9 @@
             string[] kategoriler = { "Hayvanlar", "Ülkeler", "Meslekler", "Yemekler", "Sporlar" };
             ShowCategories(kategoriler);
             
+            Console.ReadLine();
+            Console.Clear();
+
         }
         static void ShowCategories(string[] categories)
         {
@@ -30,5 +35,6 @@
                 i++;
             }
         }
+        
     }
 }
