@@ -13,7 +13,7 @@
             for (int harf = 0; harf < harfler.Length ; harf++) 
             {
                Console.Write("{0} ", harfler[harf]);
-                if (harf == harfler.Length / 2) Console.WriteLine("{0} ", harfler[harf]);
+                if (harf == harfler.Length / 2) Console.WriteLine();
             }
             
         }
