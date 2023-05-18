@@ -14,234 +14,164 @@
             string[] kategoriler = { "Hayvanlar", "Ülkeler", "Meslekler", "Yemekler", "Sporlar" };
             
             int wrongAnswer = 0;
-
-                 if (wrongAnswer == 1) Wrong1();
-            else if (wrongAnswer == 2) Wrong2();
-            else if (wrongAnswer == 3) Wrong3();
-            else if (wrongAnswer == 4) Wrong4();
-            else if (wrongAnswer == 5) Wrong5();
-            else if (wrongAnswer == 6) Wrong6();
-                 else Begingame();
-
-
-
+            string[] theCurrentAppearanceOfTheCharacter = { "Begingame", "Wrong1", "Wrong2", "Wrong3", "Wrong4", "Wrong5", "Wrong6" };
+            string a = theCurrentAppearanceOfTheCharacter[wrongAnswer];
+        Draw(a);
         }
-
-        static void Begingame()
+        static void Draw(string a)
         {
-            string[] Begingame = // 0 yanlış cevap
-               {
-                 "     X X X X X X 	",
-                 "     X         X	",
-                 "               X	",
-                 "               X	",
-                 "               X	",
-                 "               X	",
-                 "               X	",
-                 "               X	",
-                 "               X	",
-                 "               X	",
-                 "               X	",
-                 "               X	",
-                 "               X	",
-                 "               X	",
-                 "               X	",
-                 "              XXX "
-            };
-
-            for (int i = 0; i < Begingame.Length; i++)
-            {
-                for (int j = 0; j < Begingame[i].Length; j++)
-                {
-                    Console.Write(Begingame[i][j]);
-                }
-                Console.WriteLine();
-            }
-        }
-        static void Wrong1()
+            string[] Begingame =
         {
-            string[] Wrong1 = // 1 yanlış cevap
-            {
-                 "     X X X X X X 	",
-                 "     X         X	",
-                 "   X X X       X	",
-                 "  X     X      X	",
-                 "  X     X      X	",
-                 "  X     X      X	",
-                 "   X X X       X	",
-                 "               X	",
-                 "               X	",
-                 "               X	",
-                 "               X	",
-                 "               X	",
-                 "               X	",
-                 "               X	",
-                 "               X	",
-                 "              XXX "
-            };
+            "     X X X X X X 	",
+            "     X         X	",
+            "               X	",
+            "               X	",
+            "               X	",
+            "               X	",
+            "               X	",
+            "               X	",
+            "               X	",
+            "               X	",
+            "               X	",
+            "               X	",
+            "               X	",
+            "               X	",
+            "               X	",
+            "              XXX "
+        };
 
-            for (int i = 0; i < Wrong1.Length; i++)
-            {
-                for (int j = 0; j < Wrong1[i].Length; j++)
-                {
-                    Console.Write(Wrong1[i][j]);
-                }
-                Console.WriteLine();
-            }
-        }
-        static void Wrong2()
+            string[] Wrong1 =
         {
-            string[] Wrong2 = // 2 yanlış cevap
-            {
-                 "     X X X X X X 	",
-                 "     X         X	",
-                 "   X X X       X	",
-                 "  X     X      X	",
-                 "  X     X      X	",
-                 "  X     X      X	",
-                 "   X X X       X	",
-                 "     X         X	",
-                 "     X         X	",
-                 "     X         X	",
-                 "     X         X	",
-                 "     X         X	",
-                 "     X         X	",
-                 "               X	",
-                 "               X	",
-                 "              XXX "
-            };
+            "     X X X X X X 	",
+            "     X         X	",
+            "   X X X       X	",
+            "  X     X      X	",
+            "  X     X      X	",
+            "  X     X      X	",
+            "   X X X       X	",
+            "               X	",
+            "               X	",
+            "               X	",
+            "               X	",
+            "               X	",
+            "               X	",
+            "               X	",
+            "               X	",
+            "              XXX "
+        };
 
-            for (int i = 0; i < Wrong2.Length; i++)
-            {
-                for (int j = 0; j < Wrong2[i].Length; j++)
-                {
-                    Console.Write(Wrong2[i][j]);
-                }
-                Console.WriteLine();
-            }
-        }
-        static void Wrong3()
+            string[] Wrong2 =
         {
-            string[] Wrong3 = // 3 yanlış cevap
-               {
-                 "     X X X X X X 	",
-                 "     X         X	",
-                 "   X X X       X	",
-                 "  X     X      X	",
-                 "  X     X      X	",
-                 "  X     X      X	",
-                 "   X X X       X	",
-                 "     X         X	",
-                 "   X X         X	",
-                 " X   X         X	",
-                 "X    X         X	",
-                 "     X         X	",
-                 "     X         X	",
-                 "               X	",
-                 "               X	",
-                 "              XXX"
-            };
+            "     X X X X X X 	",
+            "     X         X	",
+            "   X X X       X	",
+            "  X     X      X	",
+            "  X     X      X	",
+            "  X     X      X	",
+            "   X X X       X	",
+            "     X         X	",
+            "     X         X	",
+            "     X         X	",
+            "     X         X	",
+            "     X         X	",
+            "     X         X	",
+            "               X	",
+            "               X	",
+            "              XXX "
+        };
 
-            for (int i = 0; i < Wrong3.Length; i++)
-            {
-                for (int j = 0; j < Wrong3[i].Length; j++)
-                {
-                    Console.Write(Wrong3[i][j]);
-                }
-                Console.WriteLine();
-            }
-        }
-        static void Wrong4()
+            string[] Wrong3 =
         {
-            string[] Wrong4 = // 4 yanlış cevap
-            {
-                 "     X X X X X X 	",
-                 "     X         X	",
-                 "   X X X       X	",
-                 "  X     X      X	",
-                 "  X     X      X	",
-                 "  X     X      X	",
-                 "   X X X       X	",
-                 "     X         X	",
-                 "   X X X       X	",
-                 " X   X   X     X	",
-                 "X    X     X   X	",
-                 "     X         X	",
-                 "     X         X	",
-                 "               X	",
-                 "               X	",
-                 "              XXX "
-            };
+            "     X X X X X X 	",
+            "     X         X	",
+            "   X X X       X	",
+            "  X     X      X	",
+            "  X     X      X	",
+            "  X     X      X	",
+            "   X X X       X	",
+            "     X         X	",
+            "   X X         X	",
+            " X   X         X	",
+            "X    X         X	",
+            "     X         X	",
+            "     X         X	",
+            "               X	",
+            "               X	",
+            "              XXX"
+        };
 
-            for (int i = 0; i < Wrong4.Length; i++)
-            {
-                for (int j = 0; j < Wrong4[i].Length; j++)
-                {
-                    Console.Write(Wrong4[i][j]);
-                }
-                Console.WriteLine();
-            }
-        }
-        static void Wrong5()
+            string[] Wrong4 =
         {
-            string[] Wrong5 = // 5 yanlış cevap
-              {
-                 "     X X X X X X 	",
-                 "     X         X	",
-                 "   X X X       X	",
-                 "  X     X      X	",
-                 "  X     X      X	",
-                 "  X     X      X	",
-                 "   X X X       X	",
-                 "     X         X	",
-                 "   X X X       X	",
-                 " X   X   X     X	",
-                 "X    X     X   X	",
-                 "     X         X	",
-                 "   X X         X	",
-                 " X             X	",
-                 "X              X	",
-                 "              XXX "
-            };
+            "     X X X X X X 	",
+            "     X         X	",
+            "   X X X       X	",
+            "  X     X      X	",
+            "  X     X      X	",
+            "  X     X      X	",
+            "   X X X       X	",
+            "     X         X	",
+            "   X X X       X	",
+            " X   X   X     X	",
+            "X    X     X   X	",
+            "     X         X	",
+            "     X         X	",
+            "               X	",
+            "               X	",
+            "              XXX "
+        };
 
-            for (int i = 0; i < Wrong5.Length; i++)
-            {
-                for (int j = 0; j < Wrong5[i].Length; j++)
-                {
-                    Console.Write(Wrong5[i][j]);
-                }
-                Console.WriteLine();
-            }
-        }
-        static void Wrong6()
+            string[] Wrong5 =
         {
-            string[] Wrong6 = // 6 yanlış cevap
-               {
-                 "     X X X X X X 	",
-                 "     X         X	",
-                 "   X X X       X	",
-                 "  X     X      X	",
-                 "  X     X      X	",
-                 "  X     X      X	",
-                 "   X X X       X	",
-                 "     X         X	",
-                 "   X X X       X	",
-                 " X   X   X     X	",
-                 "X    X     X   X	",
-                 "     X         X	",
-                 "   X X X       X	",
-                 " X       X     X	",
-                 "X          X   X	",
-                 "              XXX "
-            };
+            "     X X X X X X 	",
+            "     X         X	",
+            "   X X X       X	",
+            "  X     X      X	",
+            "  X     X      X	",
+            "  X     X      X	",
+            "   X X X       X	",
+            "     X         X	",
+            "   X X X       X	",
+            " X   X   X     X	",
+            "X    X     X   X	",
+            "     X         X	",
+            "   X X         X	",
+            " X             X	",
+            "X              X	",
+            "              XXX "
+        };
 
-            for (int i = 0; i < Wrong6.Length; i++)
+            string[] Wrong6 =
+        {
+            "     X X X X X X 	",
+            "     X         X	",
+            "   X X X       X	",
+            "  X     X      X	",
+            "  X     X      X	",
+            "  X     X      X	",
+            "   X X X       X	",
+            "     X         X	",
+            "   X X X       X	",
+            " X   X   X     X	",
+            "X    X     X   X	",
+            "     X         X	",
+            "   X X X       X	",
+            " X       X     X	",
+            "X          X   X	",
+            "              XXX "
+        };
+
+            string[] currentAppearance;
+
+            if (a == "Wrong1") currentAppearance = Wrong1;
+            if (a == "Wrong2") currentAppearance = Wrong2;
+            if (a == "Wrong3") currentAppearance = Wrong3;
+            if (a == "Wrong4") currentAppearance = Wrong4;
+            if (a == "Wrong5") currentAppearance = Wrong5;
+            if (a == "Wrong6") currentAppearance = Wrong6;
+            return;
+            for (int i = 0; i < currentAppearance.Length; i++)
             {
-                for (int j = 0; j < Wrong6[i].Length; j++)
-                {
-                    Console.Write(Wrong6[i][j]);
-                }
-                Console.WriteLine();
+                Console.WriteLine(currentAppearance[i]);
             }
         }
     }
