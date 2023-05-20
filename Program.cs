@@ -14,6 +14,7 @@
             string[] sporlar = { "Futbol", "Basketbol", "Voleybol", "Tenis", "Yüzme", "Atletizm", "Boks", "Jimnastik", "Hentbol", "Ragbi" };
             string[] kategoriler = { "Hayvanlar", "Ülkeler", "Meslekler", "Yemekler", "Sporlar" };
             ShowCategories(kategoriler);
+            ChooseCategory(kategoriler);
             
         }
         static void ShowCategories(string[] categories)
@@ -29,6 +30,16 @@
                 Console.WriteLine();
                 i++;
             }
+        }
+
+        static void ChooseCategory(string[] categories)
+        {
+            Console.Write("Kategori Seçiniz: ");
+            back:
+            int choosedCategory = int.Parse(Console.ReadLine());
+
+            if (choosedCategory < 1 || choosedCategory > categories.Length)
+                goto back;
         }
     }
 }
