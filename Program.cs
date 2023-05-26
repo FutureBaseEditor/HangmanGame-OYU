@@ -31,15 +31,14 @@
                 i++;
             }
         }
-
+        static int choosedCategory;
         static void ChooseCategory(string[] categories)
         {
-            Console.Write("Kategori Seçiniz: ");
-            back:
-            int choosedCategory = int.Parse(Console.ReadLine());
-
-            if (choosedCategory < 1 || choosedCategory > categories.Length)
-                goto back;
+             while (choosedCategory < 1 || choosedCategory > categories.Length)
+             { 
+                Console.Write("Kategori Seçiniz: ");        
+                choosedCategory = int.Parse(Console.ReadLine());
+             }
         }
     }
 }
