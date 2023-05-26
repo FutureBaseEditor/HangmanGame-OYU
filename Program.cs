@@ -4,13 +4,6 @@
     {
         static void Main(string[] args)
         {
-
-            
-            Console.WriteLine("Adam Asmaca");
-            int score = 0;
-            Console.WriteLine("Puan: {0}",score);
-            
-
             int score = 0;
 
             string[] hayvanlar = { "Kedi", "Köpek", "At", "Tavşan", "Leylek", "Deve", "Yarasa", "Sincap", "Sinek", "Karınca" };
@@ -19,15 +12,14 @@
             string[] yemekler = { "Makarna", "Kebap", "Pilav", "Pizza", "Köfte", "Tavuk", "Balık", "Mantı", "Börek", "Salata" };
             string[] sporlar = { "Futbol", "Basketbol", "Voleybol", "Tenis", "Yüzme", "Atletizm", "Boks", "Jimnastik", "Hentbol", "Ragbi" };
             string[] kategoriler = { "Hayvanlar", "Ülkeler", "Meslekler", "Yemekler", "Sporlar" };
-            Console.WriteLine("Adam Asmaca");
+
+            ShowGameName();
             Alphabet();
             ShowCategories(kategoriler);
 
-            
             Console.ReadLine();
             Console.Clear();
-
-
+            
             Console.WriteLine("Puan: {0}",score);
         }
         static void Alphabet()
@@ -52,6 +44,10 @@
                 Console.WriteLine();
                 i++;
             }
+        }
+        static void ShowGameName()
+        { 
+            Console.WriteLine("Adam Asmaca");
         }
         
     }
