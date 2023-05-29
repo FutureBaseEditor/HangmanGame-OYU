@@ -53,9 +53,9 @@
             Console.WriteLine("Adam Asmaca");
         }
 
+        static string chosenLetter = default;
         static void ChooseLetter()
         {
-            string chosenLetter;
             bool whileStop = false;
 
             do
@@ -74,6 +74,12 @@
                     {
                         Console.WriteLine("( {0} ) Harfini Seçtiniz", chosenLetter);
                         whileStop = true;
+                        RemoveLetter();
+                        Console.WriteLine(  "\n");
+                        ShowDynamicAlphabet();
+                        Console.WriteLine("\n");
+                        Alphabet();
+
                         break;
                     }
                     else if (i == harfler.Length - 1)
@@ -86,5 +92,39 @@
 
         }
 
+        static void RemoveLetter()
+        {
+            DynamicAlphabet();
+            for (int i = 0; i < harfler.Length; i++)
+            {
+                if (char.Parse(chosenLetter) == harfler[i])
+                {
+                    dynamicHarfler[i] = ' ';
+                }
+                else if (char.Parse(chosenLetter) == ' ')
+                {
+                    Console.WriteLine("Bu harfi daha önce seçtiniz, Başka harf seçiniz \n");
+                }
+           
+            }
+        }
+
+        static char[] dynamicHarfler = new char[harfler.Length];
+        static void DynamicAlphabet()
+        {
+            for (int i = 0; i < harfler.Length; i++)
+            {
+                dynamicHarfler[i] = harfler[i];
+            }
+            
+        }
+        static void ShowDynamicAlphabet()
+        {
+            for (int harf = 0; harf < harfler.Length; harf++)
+            {
+                Console.Write("{0} ", dynamicHarfler[harf]);
+                if (harf == harfler.Length / 2) Console.WriteLine("{0} ", dynamicHarfler[harf]);
+            }
+        }
     }
 }
