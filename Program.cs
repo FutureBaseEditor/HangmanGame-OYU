@@ -14,7 +14,9 @@
 
             ShowGameName();
             ShowCategories(kategoriler);
-            Alphabet();
+            Alphabet(); 
+            Console.WriteLine();
+
             Console.WriteLine("Puan: {0}",score);
             Console.ReadLine();
             Console.Clear();
@@ -33,7 +35,7 @@
                 i++;
             }
         }
-x
+
         static void Alphabet()
         {
             char[] harfler = { 'A', 'B', 'C', 'Ç', 'D', 'E', 'F', 'G', 'Ğ', 'H', 'I', 'İ', 'J', 'K', 'L', 'M', 'N', 'O', 'Ö', 'P', 'R', 'S', 'Ş', 'T', 'U', 'Ü', 'V', 'Y', 'Z' };
