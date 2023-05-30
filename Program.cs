@@ -17,22 +17,25 @@
             string[] kategoriler = { "Hayvanlar", "Ülkeler", "Meslekler", "Yemekler", "Sporlar" };
             Console.WriteLine("Adam Asmaca");
             ShowCategories(kategoriler);
+            Console.WriteLine();
+
             Alphabet();
-          
-            wrongAnswer = 5;
-                Draw();
+            wrongAnswer = 6;
+            Console.WriteLine();
+            Console.WriteLine();
+            Draw();
             Console.ReadLine();
             Console.Clear();
-            
-            Console.WriteLine("Puan: {0}",score);
+
+            Console.WriteLine("Puan: {0}", score);
         }
 
-            static string[] CurrentAppearance()
+        static string[] CurrentAppearance()
+        {
+            if (wrongAnswer == 0)
             {
-                if (wrongAnswer == 0)
+                return new string[]
                 {
-                    return new string[]
-                    {
                     "       X X X X X X 	",
                     "       X         X	",
                     "                 X	",
@@ -49,12 +52,12 @@
                     "                 X	",
                     "                 X	",
                     "                XXX "
-                    };
-                }
-                else if (wrongAnswer == 1)
+                };
+            }
+            else if (wrongAnswer == 1)
+            {
+                return new string[]
                 {
-                    return new string[]
-                    {
                     "       X X X X X X 	",
                     "       X         X	",
                     "     X X X       X	",
@@ -71,12 +74,12 @@
                     "                 X	",
                     "                 X	",
                     "                XXX "
-                    };
-                }
-                else if (wrongAnswer == 2)
+                };
+            }
+            else if (wrongAnswer == 2)
+            {
+                return new string[]
                 {
-                    return new string[]
-                    {
                     "       X X X X X X 	",
                     "       X         X	",
                     "     X X X       X	",
@@ -93,12 +96,12 @@
                     "                 X	",
                     "                 X	",
                     "                XXX "
-                    };
-                }
-                else if (wrongAnswer == 3)
+                };
+            }
+            else if (wrongAnswer == 3)
+            {
+                return new string[]
                 {
-                    return new string[]
-                    {
                     "       X X X X X X 	",
                     "       X         X	",
                     "     X X X       X	",
@@ -115,12 +118,12 @@
                     "                 X	",
                     "                 X	",
                     "                XXX"
-                    };
-                }
-                else if (wrongAnswer == 4)
+                };
+            }
+            else if (wrongAnswer == 4)
+            {
+                return new string[]
                 {
-                    return new string[]
-                    {
                     "       X X X X X X 	",
                     "       X         X	",
                     "     X X X       X	",
@@ -137,12 +140,12 @@
                     "                 X	",
                     "                 X	",
                     "                XXX "
-                    };
-                }
-                else if (wrongAnswer == 5)
+                };
+            }
+            else if (wrongAnswer == 5)
+            {
+                return new string[]
                 {
-                    return new string[]
-                    {
                     "       X X X X X X 	",
                     "       X         X	",
                     "     X X X       X	",
@@ -159,12 +162,12 @@
                     "   X             X	",
                     "  X              X	",
                     "                XXX "
-                    };
-                }
-                else if (wrongAnswer == 6)
+                };
+            }
+            else if (wrongAnswer == 6)
+            {
+                return new string[]
                 {
-                    return new string[]
-                    {
                     "       X X X X X X 	",
                     "       X         X	",
                     "     X X X       X	",
@@ -181,30 +184,31 @@
                     "   X       X     X	",
                     "  X          X   X	",
                     "                XXX "
-                    };
-                }
-
-                return new string[0];
+                };
             }
 
-            static void Draw()
+            return new string[0];
+        }
+
+        static void Draw()
+        {
+            string[] currentAppearance = CurrentAppearance();
+
+            for (int i = 0; i < currentAppearance.Length; i++)
             {
-                string[] currentAppearance = CurrentAppearance();
+                Console.WriteLine(currentAppearance[i]);
+            }
 
-                for (int i = 0; i < currentAppearance.Length; i++)
-                {
-                    Console.WriteLine(currentAppearance[i]);
-                }
 
-            
         }
         static void Alphabet()
         {
-            char[] harfler = { 'A', 'B', 'C', 'Ç', 'D', 'E', 'F', 'G', 'Ğ', 'H', 'I', 'İ', 'J', 'K', 'L', 'M', 'N', 'O', 'Ö', 'P', 'R', 'S', 'Ş', 'T', 'U', 'Ü', 'V', 'Y', 'Z' };
-            for (int harf = 0; harf < harfler.Length ; harf++) 
+            char[] harfler = { 'A', 'B', 'C', 'Ç', 'D', 'E', 'F', 'G', 'Ğ', 'H', 'I', 'İ', 'J', 'K', 'L', 
+                'M', 'N', 'O', 'Ö', 'P', 'R', 'S', 'Ş', 'T', 'U', 'Ü', 'V', 'Y', 'Z' };
+            for (int harf = 0; harf < harfler.Length; harf++)
             {
                 Console.Write("{0} ", harfler[harf]);
-                if (harf == harfler.Length / 2) Console.WriteLine("{0} ", harfler[harf]);
+                if (harf == harfler.Length / 2) Console.WriteLine();
             }
         }
         static void ShowCategories(string[] categories)
@@ -214,17 +218,17 @@
             {
                 for (int j = 0; j < columnCount; j++)
                 {
-                    if (i == 4  && j == 1) break;
-                     Console.Write("{0}- {1}\t", i + j + 1, categories[i]);
+                    if (i == 4 && j == 1) break;
+                    Console.Write("{0}- {1}\t", i + j + 1, categories[i]);
                 }
                 Console.WriteLine();
                 i++;
             }
         }
         static void ShowGameName()
-        { 
+        {
             Console.WriteLine("Adam Asmaca");
         }
-        
-    }
 
+    }
+}
