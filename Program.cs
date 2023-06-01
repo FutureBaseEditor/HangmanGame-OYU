@@ -2,6 +2,7 @@
 {
     internal class Program
     {
+        static char[] harfler = { 'A', 'B', 'C', 'Ç', 'D', 'E', 'F', 'G', 'Ğ', 'H', 'I', 'İ', 'J', 'K', 'L', 'M', 'N', 'O', 'Ö', 'P', 'R', 'S', 'Ş', 'T', 'U', 'Ü', 'V', 'Y', 'Z' };
         static void Main(string[] args)
         {
             int score = 0;
@@ -14,7 +15,7 @@
 
             ShowGameName();
             ShowCategories(kategoriler);
-            Alphabet(); 
+            ShowAlphabet(); 
             Console.WriteLine();
 
             Console.WriteLine("Puan: {0}",score);
@@ -36,22 +37,19 @@
             }
         }
 
-        static void Alphabet()
+        static void ShowAlphabet()
         {
-            char[] harfler = { 'A', 'B', 'C', 'Ç', 'D', 'E', 'F', 'G', 'Ğ', 'H', 'I', 'İ', 'J', 'K', 'L', 'M', 'N', 'O', 'Ö', 'P', 'R', 'S', 'Ş', 'T', 'U', 'Ü', 'V', 'Y', 'Z' };
+            char[] harfler = { 'A', 'B', 'C', 'Ç', 'D', 'E', 'F', 'G', 'Ğ', 'H', 'I', 'İ', 'J', 'K', 'L', 
+                'M', 'N', 'O', 'Ö', 'P', 'R', 'S', 'Ş', 'T', 'U', 'Ü', 'V', 'Y', 'Z' };
             for (int harf = 0; harf < harfler.Length ; harf++) 
             {
                Console.Write("{0} ", harfler[harf]);
                 if (harf == harfler.Length / 2) Console.WriteLine();
             }
-            
         }
-
         static void ShowGameName()
         { 
             Console.WriteLine("Adam Asmaca");
         }
-        
-
     }
 }
