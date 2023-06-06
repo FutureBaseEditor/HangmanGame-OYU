@@ -31,13 +31,13 @@
                 i++;
             }
         }
-        static int choosedCategory;
+        static int choosenCategory;
         static void ChooseCategory(string[] categories)
         {
-             while (choosedCategory < 1 || choosedCategory > categories.Length)
+             while (choosenCategory < 1 || choosenCategory > categories.Length)
              { 
                 Console.Write("Kategori Seçiniz: ");        
-                choosedCategory = int.Parse(Console.ReadLine());
+                choosenCategory = int.Parse(Console.ReadLine());
              }
         }
     }
