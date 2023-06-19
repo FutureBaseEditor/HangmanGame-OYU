@@ -31,7 +31,6 @@
             Console.WriteLine("Puan: {0}", score);
         }
 
-        static char[] harfler = { 'A', 'B', 'C', 'Ç', 'D', 'E', 'F', 'G', 'Ğ', 'H', 'I', 'İ', 'J', 'K', 'L', 'M', 'N', 'O', 'Ö', 'P', 'R', 'S', 'Ş', 'T', 'U', 'Ü', 'V', 'Y', 'Z' };
         static void Alphabet()
         {
             for (int harf = 0; harf < harfler.Length; harf++)
@@ -79,8 +78,6 @@
                 choosenCategory = int.Parse(Console.ReadLine());
              }
         }
-    }
-}
 
 
         static string chosenLetter = default;
