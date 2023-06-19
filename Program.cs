@@ -6,6 +6,8 @@
         static void Main(string[] args)
         {
             int score = 0;
+            Console.WriteLine("Puan: {0}",score);
+
             string[] hayvanlar = { "Kedi", "Köpek", "At", "Tavşan", "Leylek", "Deve", "Yarasa", "Sincap", "Sinek", "Karınca" };
             string[] ulkeler = { "Türkiye", "İtalya", "Kanada", "Almanya", "Japonya", "İngiltere", "Rusya", "Fransa", "Meksika", "Brezilya" };
             string[] meslekler = { "Öğretmen", "Doktor", "Mühendis", "Hemşire", "Polis", "Avukat", "İnşaat işçisi", "Dişçi", "Gazeteci", "Bankacı" };
@@ -68,6 +70,17 @@
         {
             Console.WriteLine("Adam Asmaca");
         }
+        static int choosenCategory;
+        static void ChooseCategory(string[] categories)
+        {
+             while (choosenCategory < 1 || choosenCategory > categories.Length)
+             { 
+                Console.Write("Kategori Seçiniz: ");        
+                choosenCategory = int.Parse(Console.ReadLine());
+             }
+        }
+    }
+}
 
 
         static string chosenLetter = default;
